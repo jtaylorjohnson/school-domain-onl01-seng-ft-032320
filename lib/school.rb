@@ -15,8 +15,9 @@ class School
   def add_student(name, grade)
     @name = name 
     @grade = grade
+    
+    unless roster[grade]
     roster[grade] = []
-    if 
     roster[grade] << name 
   end 
   
