@@ -16,7 +16,7 @@ class School
     @name = name 
     @grade = grade
     
-    unless roster[grade]
+    if roster[grade]
     roster[grade] = []
     roster[grade] << name 
   end 
