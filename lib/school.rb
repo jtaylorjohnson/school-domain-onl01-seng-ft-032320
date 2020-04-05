@@ -16,11 +16,15 @@ class School
     @name = name 
     @grade = grade
     
-    if roster[grade]
+    if roster[grade] = nil
     roster[grade] = []
     roster[grade] << name 
+    else roster[grade] << name
+    end
   end 
   
+  def grade(grade)
+    return roster[grade]
+  end 
     
-  
 end
